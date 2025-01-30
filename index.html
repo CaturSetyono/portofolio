@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catur Setyono - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+    <header class="fixed w-full z-20 bg-gray-900 bg-opacity-80 backdrop-blur-md shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-green-500">Nyf.</div>
+            <ul class="hidden md:flex space-x-6 text-white">
+                <li><a href="#home" class="hover:text-green-400 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-green-400 transition-colors">About</a></li>
+                <li><a href="#portfolio" class="hover:text-green-400 transition-colors">Portfolio</a></li>
+                <li><a href="#certificate" class="hover:text-green-400 transition-colors">Certificate</a></li>
+                <li><a href="#contact" class="hover:text-green-400 transition-colors">Contact</a></li>
+            </ul>
+            <div class="text-green-500 md:hidden">
+                <button id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <ul id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white text-center py-4">
+            <li><a href="#home" class="block py-2 hover:text-green-400">Home</a></li>
+            <li><a href="#about" class="block py-2 hover:text-green-400">About</a></li>
+            <li><a href="#portfolio" class="block py-2 hover:text-green-400">Portfolio</a></li>
+            <li><a href="#certificate" class="block py-2 hover:text-green-400">Certificate</a></li>
+            <li><a href="#contact" class="block py-2 hover:text-green-400">Contact</a></li>
+        </ul>
+    </header>
+
+    <main class="pt-20">
+        <section id="home" class="flex items-center min-h-screen bg-gray-900">
+            <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-4">
+                <div class="text-left md:w-1/2 space-y-5">
+                    <h1 class="text-5xl font-bold">Hello, I'm <span class="text-green-500">Catur Setyono</span></h1>
+                    <p class="text-lg text-gray-400">Frontend Developer</p>
+                    <a href="path/to/your/cv.pdf" download class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg inline-block transition-transform transform hover:-translate-y-1">Download CV</a>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0">
+                    <img src="path/to/your/image.jpg" alt="Catur Setyono" class="rounded-full shadow-xl w-64 h-64 md:w-80 md:h-80 mx-auto" data-aos="fade-left">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-800" data-aos="fade-up">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-4xl font-semibold text-white">About Me</h2>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">I am a passionate Frontend Developer with experience in building responsive and user-friendly web applications. I specialize in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js. I am always eager to learn new technologies and improve my skills.</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20 bg-gray-900" data-aos="fade-up">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-4xl font-semibold text-white">Portfolio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold text-green-500">Project 1</h3>
+                        <p class="mt-2 text-gray-400">Description of project 1.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold text-green-500">Project 2</h3>
+                        <p class="mt-2 text-gray-400">Description of project 2.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold text-green-500">Project 3</h3>
+                        <p class="mt-2 text-gray-400">Description of project 3.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-900" data-aos="fade-up">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-4xl font-semibold text-white">Contact</h2>
+                <p class="mt-4 text-gray-400">Feel free to reach out to me for any inquiries or collaborations.</p>
+                <form class="mt-8 max-w-2xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Your Name" class="bg-gray-800 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <input type="email" placeholder="Your Email" class="bg-gray-800 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <textarea placeholder="Your Message" class="bg-gray-800 text-white p-3 rounded-lg w-full mt-6 focus:outline-none focus:ring-2 focus:ring-green-500" rows="5"></textarea>
+                    <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg mt-6 transition-transform transform hover:-translate-y-1">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6 text-center text-white">
+        <p>&copy; 2025 Catur Setyono. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
